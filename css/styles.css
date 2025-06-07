@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *   ,
- * 6 |   padding: $gap-md  %5;
+ * 5 |   padding: $gap-md;
  *   |            ^^^^^^^
  *   '
- *   scss\components\_header.scss 6:12  @use
+ *   scss\components\_header.scss 5:12  @use
  *   scss\main.scss 4:1                 root stylesheet */
 
 body::before {
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 6 \2502    padding: $gap-md  %5;\d\a   \2502             ^^^^^^^\a   \2575 \a   scss\\components\\_header.scss 6:12  @use\a   scss\\main.scss 4:1                 root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 5 \2502    padding: $gap-md;\d\a   \2502             ^^^^^^^\a   \2575 \a   scss\\components\\_header.scss 5:12  @use\a   scss\\main.scss 4:1                 root stylesheet";
 }

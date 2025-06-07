@@ -1,9 +1,8 @@
-@forward '../base/variables';
 .header {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  padding: $gap-md  %5;
+  padding: $gap-md;
   background: $dark;
   position: sticky;
   top: 0;
