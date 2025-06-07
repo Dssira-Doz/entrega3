@@ -1,0 +1,16 @@
+// Importaciones
+@use 'base/reset';
+@use 'base/variables' as *;
+@use 'components/header';
+@use 'components/slider';
+@use 'components/hero';
+@use 'components/pilares';
+@use 'components/footer';
+
+// Estilos globales
+body {
+  font-family: 'Arial', sans-serif;
+  background: $dark;
+  color: $light;
+  line-height: 1.6;
+}

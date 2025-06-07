@@ -1,0 +1,64 @@
+@forward '../base/variables';
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: $gap-md  %5;
+  background: $dark;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  &__logo-image {
+    width: 180px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: $gap-lg;
+  }
+
+  &__nav-link {
+    color: $primary;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $light;
+
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: $primary;
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s ease;
+    }
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    &__nav {
+      grid-auto-flow: row;
+      justify-content: center;
+      margin-top: $gap-md;
+    }
+  }
+}
